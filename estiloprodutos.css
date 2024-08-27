@@ -1,0 +1,217 @@
+body {
+    margin-left: 0;
+  margin-right: 0;
+  height: 100%;
+  background-color: black;
+}
+
+
+.container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 5rem;
+    background-color: black;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header li {
+    list-style-type: none;
+    margin-left: 9rem;
+}
+
+li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 3rem;
+}
+
+
+
+
+.Container-produtos {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  padding: 20px;
+  
+  }
+  
+  .Container-produtos img:hover {
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+    transition: 0.3s;
+  
+  }
+  
+  .produtos img {
+
+        width: 200px;
+        height: 200px; 
+        object-fit: cover; 
+        transition: 0.3s;
+  }
+  
+  .produtos {
+    background-color: #8B4513;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 220px;
+    margin-left:  60px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+ 
+  }
+  
+  .hr1 {
+    margin: 70px 0;
+    border: 0;
+    border-top: 2px solid #8B4513;
+  
+  }
+
+  .cart {
+    position: relative;
+    margin-left: 70px;
+    margin-top: -5px;
+}
+
+.cart-icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+#cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 14px;
+}
+
+  .container button {
+    padding: 10px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    background-color: #8B4513;
+}
+
+.contador {
+    background-color: #363636;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    width: 30%;
+    margin-left: 500px;
+}
+
+.addCarrinho button {
+    font-size: 18px;
+    background-color: #8B4513;
+    color: #8B4513;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 10px;
+  
+}
+
+ button:hover {
+    background-color: #8B4513;
+}
+
+.form-container {
+    background-color: #8B4513;
+    padding: 30px;
+    max-width: 400px;
+    margin-left: 550px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(58, 58, 58, 0.014);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #363636;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+.graos img {
+    width: 99%;
+    height: auto;
+    border: 4px solid #A0522D;
+    margin-bottom: 50px;
+  }
+

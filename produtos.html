@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/C:\Users\acfl1\Downloads\ProjetoCafe (2)\android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/C:\Users\acfl1\Downloads\ProjetoCafe (2)\android-chrome-512x512.png">
+    <link rel="stylesheet" href="estiloprodutos.css">
+    <script defer src="cadastro.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+  
+  </head>
+      <header>
+          <nav>            
+            <ul>
+                  <li><a href="#home">HOME</a></li>
+                  <li><a href="#menu">MENU</a></li>
+                  <li><a href="#contato">CADASTRO</a></li>
+                  <li><a href="#sobre">SOBRE</a></li>
+                  <li><a href="#contato">CONTATO</a></li>
+                  <div class="cart">
+                    <img src="img/carrinho.png" alt="Carrinho" class="cart-icon">
+                    <span id="cart-count">0</span>
+                 
+              </ul>
+          </nav>       
+      </header>
+      </div>
+      </div>  
+<br>
+<br>
+<br>
+<br>
+<br>
+
+      <section>
+        <div class="Container-produtos">
+
+          <div class="produtos">
+            <img src="img/capputinoc.png" alt="">
+            <p>Capputino</p>
+            <h5>R$10,00</h5>
+            <button class="addCarrinho" data-nome="Produto 1" data-preco="10">Adicionar ao Carrinho</button>
+            <ion-icon name="cart-outline"></ion-icon>
+          </div>
+
+          <div class="produtos">
+            <img src="img/cafelattec.png" alt="">
+            <p>Café Latte</p>
+            <h5>R$10,00</h5>
+            <button class="addCarrinho" data-nome="Produto 2" data-preco="10">Adicionar ao Carrinho</button>
+            <ion-icon name="cart-outline"></ion-icon>
+          </div>
+
+          <div class="produtos">
+            <img src="img/cafeespressoc.png" alt="">
+            <p>Café Expresso </p>
+            <h5>R$7,00</h5>
+            <button class="addCarrinho" data-nome="Produto 2" data-preco="7">Adicionar ao Carrinho</button>
+            <span>
+              <ion-icon name="cart-outline"></ion-icon>
+            </span>
+          </div>
+      
+          <div class="produtos">
+            <img src="img/caramelomacc.png" alt="">
+            <p>Caramelo Maquiatto</p>
+            <h5>R$10,00</h5>
+            <button class="addCarrinho" data-nome="Produto 3" data-preco="10">Adicionar ao Carrinho</button>
+            <ion-icon name="cart-outline"></ion-icon>
+          </div>
+
+          <div class="produtos">
+            <img src="img/cupcakec.png" alt="">
+            <p>Cupcake</p>
+            <h5>R$10,00</h5>
+            <button class="addCarrinho" data-nome="Produto 4" data-preco="10">Adicionar ao Carrinho</button>
+            <ion-icon name="cart-outline"></ion-icon>
+          </div>
+
+          <div class="produtos">
+            <img src="img/comboc.png" alt="">
+            <p>Combo Croaissant e Expresso </p>
+            <h5>R$15,00</h5>
+            <button class="addCarrinho" data-nome="Produto 5" data-preco="15">Adicionar ao Carrinho</button>
+            <span>
+              <ion-icon name="cart-outline"></ion-icon>
+            </span>
+
+
+          </div> 
+        </div>
+      </section>
+
+</head>
+<body>
+
+  <div class="contador">
+    <h2>Carrinho de Compras</h2>
+    <ul id="carrinho"></ul>
+    <p>Total: R$ <span id="total">0</span></p>
+  </div>
+
+    <div class="container">
+        <button onclick="window.location.href='index.html'">Voltar para Home</button>
+    </div>
+    <script src="carrinho.js"></script>
+
+    <div class="graos">
+      <img src="img/graos.jpg">
+    </div> 
+
+    <div class="form-container">
+      <h1>Cadastro</h1>
+      <form id="cadastroForm">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" required>
+
+          <label for="confirmarSenha">Confirmar Senha:</label>
+          <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+
+          <button type="submit">Cadastrar</button>
+      </form>
+  </div>
+
+
+</body>
+</html>

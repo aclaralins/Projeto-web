@@ -5,7 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quimera Cafeteria</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/C:\Users\acfl1\Downloads\ProjetoCafe (2)\android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/C:\Users\acfl1\Downloads\ProjetoCafe (2)\android-chrome-512x512.png">
     <link rel="stylesheet" href="./style.css">
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 </head>
     <header>
         <nav>            
@@ -15,7 +30,9 @@
                 <li><a href="#contato">CADASTRO</a></li>
                 <li><a href="#sobre">SOBRE</a></li>
                 <li><a href="#contato">CONTATO</a></li>
-               
+                <div class="cart">
+                  <img src="img/carrinho.png" alt="Carrinho" class="cart-icon">
+                  <span id="cart-count">0</span>
             </ul>
         </nav>       
     </header>
@@ -109,7 +126,7 @@
           o melhor atendimento, acompanhado do melhor ambiente. Os nossos cafés e 
           os nossos quitutes gourmets se tornarão os seus favoritos.
           Clique no botão abaixo para comprar:</h4>
-      <button>Comprar</button>
+          <button onclick="window.location.href='produtos.html'">Comprar</button>
     </div>
   </section>
 
@@ -173,7 +190,60 @@
 		</form>
 	</div>
 
+  <script>
+    function validarEmail(email) {
+        const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return re.test(email);
+    }
+
+    function validarFormulario() {
+        const nome = document.getElementById('nome').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const assunto = document.getElementById('assunto').value.trim();
+        const mensagem = document.getElementById('mensagem').value.trim();
+        const sucesso = document.getElementById('sucesso');
+
+        if (nome === "") {
+            alert("Por favor, preencha o campo Nome.");
+            return false;
+        }
+
+        if (email === "") {
+            alert("Por favor, preencha o campo E-mail.");
+            return false;
+        } else if (!validarEmail(email)) {
+            alert("Por favor, insira um E-mail válido.");
+            return false;
+        }
+
+        if (assunto === "") {
+            alert("Por favor, preencha o campo Assunto.");
+            return false;
+        }
+
+        if (mensagem === "") {
+            alert("Por favor, preencha o campo Mensagem.");
+            return false;
+        }
+
+        // Se todos os campos estiverem corretos, mostra a mensagem de sucesso
+        sucesso.style.display = "block";
+
+        // Impede o envio real do formulário para fins de demonstração
+        return false;
+    }
+</script>
+
 </footer>
+
+<article>
+  <button class="scrollTop" onclick="backTop();">
+    <img src="img/inicio.png" alt="">
+</article>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
 </div>
 </section>
 </body>
