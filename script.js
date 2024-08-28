@@ -13,5 +13,5 @@ window.addEventListener("scroll", function() {
   }
 
 
-new window.VLibras.Widget('https://vlibras.gov.br/app');
+
 
